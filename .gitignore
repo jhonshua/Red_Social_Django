@@ -1,0 +1,18 @@
+# Django-specific
+.DS_Store
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+local_settings.py
+db.sqlite3
+.env
+env
+
+# Common
+*.swp
+*.tmp
+*~
+.DS_Store
+.idea
+.vscode
