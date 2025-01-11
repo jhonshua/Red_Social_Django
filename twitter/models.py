@@ -15,12 +15,18 @@ class Post(models.Model):
     timestamp = models.DateTimeField(default=timezone.now)
     content = models.TextField()
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
-    action_checkbox = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['-timestamp']
 
     def __str__(self):
         return self.content  
+
+class Relationship(models.Model):
+	from_user = models.ForeignKey(User, related_name='relationships', on_delete=models.CASCADE)
+	to_user = models.ForeignKey(User, related_name='related_to', on_delete=models.CASCADE)
+
+	def __str__(self):
+		return f'{self.from_user} to {self.to_user}'
         
     
