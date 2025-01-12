@@ -38,14 +38,15 @@
             <div class="d-flex">
                 <div class="col-xs">
                     <!-- Image form -->
-                    <img src="https://i.pinimg.com/736x/ea/f2/2e/eaf22e6a189f76ed24054e2ca7feb00f.jpg" alt=""
+                    <img src={{ request.user.profile.image.url }} alt=""
                         class="avator">
                     <!-- Formulario -->
                 </div>
 
                 <!-- Formulario -->
-                <form class="col pr-0">
-                    <textarea class="form-control w-100" id="contentsBox" placeholder="What's happening?"></textarea>
+                <form class="col pr-0" method="post">
+                    {% csrf_token %}
+                    {{ form.content }}
                     <div class="container d-flex" style="padding: 1rem 0 0 0;">
                         <div id="leftBtn">
                             <div id="charBadge" class="badge badge-pill badge-primary ml-2"
@@ -72,7 +73,7 @@
             <!-- FOR LOOP HERE -->
             <div class="tweet-wrap" style="border-radius:20px">
                 <div class="tweet-header">
-                    <img src="https://toppng.com/uploads/preview/roger-berry-avatar-placeholder-11562991561rbrfzlng6h.png"
+                    <img src= {{ request.user.profile.image.url }}
                         alt="" class="avator">
                     <div class="tweet-header-info">
                         {{ post.user.first_name }}  <span>@{{ post.user }}</span><span>{{  post.timestamp|naturaltime }}
