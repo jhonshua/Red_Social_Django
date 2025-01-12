@@ -1,6 +1,6 @@
-# Django Twitter Clone by Julio Llinas
+# Django Red-Social de Julio Llinas
 
-Fully functional Django App that looks ecxatly like real Twitter.
+Aplicación Django totalmente funcional que se ve parecida como el Twitter .
 
 Demo Image:
 
@@ -13,19 +13,19 @@ Demo Image:
 
 ## Setup
 
-1. Git Clone the project with: ```https://github.com/jhonshua/Red_Social_Django```.
+1. Git Clone el proyecto con: ```https://github.com/jhonshua/Red_Social_Django```.
 
-2. Move to the base directory: ```cd Django-Twitter-Clone```
+2. Moverse al directorio: ```cd Django-Twitter-Clone```
 
 3. Create a new python enveronment with: ```python -m venv env```.
 
-4. Activate enveronment with: ```env\Scripts\activate``` on windows, or ```source env/bin/activate``` on Mac and Linux.
+4. Activar el entorno virtual: ```env\Scripts\activate``` en windows, o ```source env/bin/activate``` o Mac and Linux.
 
-5. Install required dependences with: ```pip install -r requirements.txt```.
+5. Instalar con: ```pip install -r requirements.txt```.
 
-6. Make migrations with: ```python manage.py makemigrations``` and then ```python manage.py migrate```.
+6. Realizar las migraciones de los modelos: ```python manage.py makemigrations``` y luego ```python manage.py migrate```.
 
-7. Run app localy with: ```python manage.py runserver```.
+7. Arrancar la app: ```python manage.py runserver```.
 
 ## Estructura de carpetas propuesta:    
 
