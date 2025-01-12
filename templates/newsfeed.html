@@ -4,6 +4,8 @@
 <div id="main" class="container-fluid d-flex">
         
     <!-- Barra Izquierda -->
+    {% if request.user.is_authenticated %} 
+
          <div class="sidebar m-5 d-none d-md-block">
             <div class="">
                 <div class="card " style="width: 18rem; text-align:center;border-radius: 20px;">
@@ -29,7 +31,12 @@
                 class="btn btn-lg btn-block mt-4 text-white ">Editar mi perfil</a>
             </div>
         </div>
-        <!-- End Barra Izquierda -->
+
+    {% else %} 
+         <p>¡Bienvenido a tu red social favorita!</p>
+    {% endif %}
+    <!-- End Barra Izquierda -->
+   
 
     <!-- Center -->
     <div class="content">
