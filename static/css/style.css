@@ -157,6 +157,32 @@ a:link {
   color: white;
 }
 
+/* REGISTER PAGE*/
+
+.twitter-register-box {
+  max-width: 600px;
+  margin: 70px auto;
+}
+
+.twitter-register-box header{
+  text-align: center;
+}
+
+
+.twitter-register-box header img{
+  width: 70px;
+}
+
+.twitter-register-box .footer{
+  text-align: center;
+  margin-top: 20px;
+  color: #1E96EB;
+}
+.twitter-register-box .footer a{
+  color: #1E96EB;
+  text-decoration: none;
+}
+
 
 /* LOGIN PAGE*/
 .login-page{
@@ -165,7 +191,7 @@ a:link {
 
 .twitter-login-box {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 140px auto;
 }
 
 .twitter-login-box header img{
@@ -179,7 +205,6 @@ a:link {
     margin-bottom: 15px;
 }
 
-.input-wrapper label,
 .input-wrapper input{
     width: 100%;
     display: block;
@@ -187,24 +212,21 @@ a:link {
 
 .input-wrapper input{
     border: none;
+    border-radius: 6px;
     background-color: #eee;
     padding: 10px;
     font-size: 20px;
-    border-bottom: 3px solid #6a6a6a;
 }
 
-.input-wrapper input[type="password"]{
-   border-bottom: 3px solid red;
-}
 
 .input-wrapper input:focus{
     outline: none;
 }
 
 .input-wrapper label{
-    background-color: #eee;
     padding: 10px;
-    color: #6a6a6a;
+    width: 100%;
+    display: block;
 }
 
 .twitter-btn{
@@ -216,6 +238,7 @@ a:link {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 60px;
 }
 
 .twitter-login-box .footer{

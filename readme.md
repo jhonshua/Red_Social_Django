@@ -3,7 +3,13 @@
 Fully functional Django App that looks ecxatly like real Twitter.
 
 Demo Image:
-![](static/img/TwitterDemo.png)
+
+![](static/img/Twitterindex.png)
+
+![](static/img/Twitterlogin.png)
+
+![](static/img/TwitterRegister.png)
+
 
 ## Setup
 
